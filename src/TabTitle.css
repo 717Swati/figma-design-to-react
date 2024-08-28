@@ -1,0 +1,11 @@
+.tabtitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.allsliders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+}

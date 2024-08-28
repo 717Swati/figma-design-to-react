@@ -1,0 +1,14 @@
+.title {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 8px;
+}
+
+.para {
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.img {
+    border-radius: 15px;
+}
