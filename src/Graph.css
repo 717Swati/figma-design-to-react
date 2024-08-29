@@ -1,0 +1,114 @@
+.graph-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #4a4a4a;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.axis-label {
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+}
+
+.x-axis {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.y-axis {
+    top: 65%;
+    left: 15px;
+    /* Adjust the left position to fit the label inside the container */
+    transform: translateY(-50%) rotate(-90deg);
+    transform-origin: left center;
+
+    /* Align rotation better */
+}
+
+.icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #fff;
+    background-color: #666;
+}
+
+.help-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-icon::after {
+    content: '?';
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.top-left {
+    top: 10px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 16px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 16px;
+    left: 20px;
+}
+
+/* Horizontal line at the base */
+.base-line {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: white;
+}
+
+/* Vertical line for the y-axis */
+.vertical-line {
+    position: absolute;
+    top: 20px;
+    bottom: 40px;
+    left: 33px;
+    /* Align it with the y-axis label */
+    width: 2px;
+    background-color: white;
+}
+
+.icon.small {
+    width: 20px;
+    height: 20px;
+}
+
+.icon.medium {
+    width: 40px;
+    height: 40px;
+}
+
+.icon.large {
+    width: 60px;
+    height: 60px;
+}

@@ -1,0 +1,213 @@
+.main {
+    display: block;
+    /* background-color: rgba(0, 0, 0, 0.223); */
+}
+
+.head {
+    /* position: relative; */
+    /* left: -27%; */
+    padding-left: 10px;
+    text-align: left;
+    font-size: 30px;
+    color: rgb(150, 144, 144);
+}
+
+.ProductTab {
+    margin-bottom: 5px;
+    padding: 0 5px 0 5px;
+    width: 250vb;
+    display: flex;
+}
+
+.product {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    width: 150vb;
+
+}
+
+.custom-line {
+    border: none;
+    height: 3px;
+    background-color: #4A3FFF;
+    border-radius: 20px;
+}
+
+.description {
+    background-color: rgba(107, 110, 118, 0.413);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 70px;
+
+}
+
+
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Space between tabs */
+}
+
+.tab {
+    flex: 1 1 calc(50% - 10px);
+    /* Two tabs per row with a gap */
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 19px;
+    /* Rounded corners */
+    background-color: hsla(0, 4%, 77%, 0.198);
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    min-height: 250px;
+    /* Ensure tabs have a minimum height */
+    position: relative;
+    /* For positioning checkbox at bottom */
+}
+
+
+.tab h2 {
+    margin-top: 0;
+}
+
+.tab p {
+    margin-bottom: 20px;
+    /* Space between content and checkbox */
+    text-align: start;
+    font-size: 12px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    left: 15px;
+}
+
+.checkbox-container label {
+    font-size: 15px;
+    color: white;
+}
+
+.checkbox-container input[type="checkbox"] {
+    color: #f7ececeb;
+    margin-right: 15px;
+}
+
+.tab.checked {
+    background: linear-gradient(60deg, blue, black);
+    color: white;
+}
+
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .tab {
+        flex: 1 1 100%;
+        /* Single tab per row on small screens */
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+.footer-text {
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 76px;
+}
+
+.footer4 {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.parallel {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallel .img1 {
+    width: 78vb;
+    height: 78vh;
+    padding-right: 25px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-item {
+    background-color: #444;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Space between elements in each box item */
+    position: relative;
+}
+
+
+.box-item img {
+    width: 112vb;
+    height: -10vh;
+}
+
+.box-item pre {
+    /* flex-grow: 1; */
+    font-size: 11px;
+    color: #ddd;
+    margin: 0;
+}
+
+.checkbox {
+    display: flex;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.checkbox input[type="checkbox"] {
+    color: #f7ececeb;
+    margin-right: 15px;
+}
+
+.checkbox label {
+    font-size: 15px;
+    color: white
+}
+
+.box-item.checked {
+    background: linear-gradient(60deg, blue, black);
+    color: white;
+}
